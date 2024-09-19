@@ -1,0 +1,6 @@
+if SHIELD_CHOC65
+
+config ZMK_KEYBOARD_NAME
+	default "Choc65"
+
+endif

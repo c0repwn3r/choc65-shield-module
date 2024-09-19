@@ -1,0 +1,24 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+		default_layer {
+			// |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |  11 |  12 |  13 |   14 |   15 |
+			// |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|------|
+			// |  ~  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | Bksp | Home |
+			// | Tab |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  {  |  }  |   |  |  End |
+			// | Cap |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     | Entr | PgUp |
+			// | Shf |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  | Shf |     | Up   | PgDn |
+			// | Ctr | Mta | Alt | Sp1 | Sp2 |     | Sp3 |     | Alt | PtS | Ctr | Lft |     | Dn   | Rt
+			bindings = <
+				&kp TILDE2 &kp N1    &kp N2   &kp N3    &kp N4    &kp N5    &kp N6    &kp N7   &kp N8    &kp N9    &kp N0    &kp MINUS &kp EQL  &kp BSPC     &kp HOME
+				&kp TAB    &kp Q     &kp W    &kp E     &kp R     &kp T     &kp Y     &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH     &kp END
+				&kp CAPS   &kp A     &kp S    &kp D     &kp F     &kp G     &kp H     &kp J    &kp K     &kp L     &kp SEMI  &kp APOS           &kp KP_ENTER &kp PGUP
+				&kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B     &kp N     &kp M    &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT          &kp UP       &kp PGDN
+				&kp LCTRL  &kp LMETA &kp LALT &kp SPACE &kp SPACE &kp SPACE &kp SPACE          &kp RALT  &kp PSCRN &kp RCTRL &kp LEFT           &kp DOWN     &kp RIGHT           
+			>;
+		};
+	};
+};

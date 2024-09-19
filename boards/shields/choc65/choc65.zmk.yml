@@ -1,0 +1,10 @@
+file_format: '1'
+id: choc65
+name: Choc65
+type: shield
+url: https://github.com/c0repwn3r/choc65-zmk-shield/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+siblings: []
