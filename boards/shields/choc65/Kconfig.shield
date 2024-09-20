@@ -1,2 +1,2 @@
 config SHIELD_CHOC65
-	def_bool $(shields_list_contains,my_board)
+	def_bool $(shields_list_contains,choc65)
